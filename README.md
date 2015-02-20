@@ -1,6 +1,4 @@
-# developer-exercise-2
-
-# Developer Exercise
+# Developer Exercise 2
 
 Copyright (c) 2015 Focus on the Family All rights reserved
 
