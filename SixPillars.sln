@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixPillars.Web", "SixPillars.Web\SixPillars.Web.csproj", "{3B2924AF-173D-4CA6-8348-1710D9EE23B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixPillarsUnitTests", "SixPillarsUnitTests\SixPillarsUnitTests.csproj", "{1F09472E-34BF-467B-BECC-2D5465A055D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3B2924AF-173D-4CA6-8348-1710D9EE23B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B2924AF-173D-4CA6-8348-1710D9EE23B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B2924AF-173D-4CA6-8348-1710D9EE23B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F09472E-34BF-467B-BECC-2D5465A055D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F09472E-34BF-467B-BECC-2D5465A055D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F09472E-34BF-467B-BECC-2D5465A055D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F09472E-34BF-467B-BECC-2D5465A055D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

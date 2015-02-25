@@ -5,9 +5,9 @@ using System.Web;
 
 namespace SixPillars.Web.Models
 {
-    public class SixPillarsModel
+    public class SixPillarsModel:Interfaces.ISixPillarsModel
     {
-        public List<Pillar> SixPillars { get; private set; }
+        public List<Pillar> Pillars { get; private set; }
         public SixPillarsModel()
         {
             string JSONResult = string.Empty;
@@ -17,10 +17,10 @@ namespace SixPillars.Web.Models
                 JSONResult = DataSourceReader.ReadToEnd();
             }
             var result = System.Web.Helpers.Json.Decode(JSONResult);
-            SixPillars = new List<Pillar>();
+            Pillars = new List<Pillar>();
             foreach (dynamic myPillar in result)
             {
-                SixPillars.Add(new Pillar(myPillar));
+                Pillars.Add(new Pillar(myPillar));
             }
         }
     }

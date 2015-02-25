@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web;
 using System.Web.Helpers;
 using System.Web.Http;
+using SixPillars.Web.Interfaces;
 
 namespace SixPillars.Web.Controllers
 {
@@ -14,7 +15,8 @@ namespace SixPillars.Web.Controllers
         // GET api/<controller>
         public IEnumerable<Pillar> Get()
         {
-            return new Models.SixPillarsModel().SixPillars;
+            ISixPillarsModel myModel =new Models.SixPillarsModel();
+            return myModel.Pillars;
         }
     }
 }

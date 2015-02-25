@@ -111,9 +111,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\ISixPillarsModel.cs" />
     <Compile Include="Models\SixPillarsModel.cs" />
     <Compile Include="Pillar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\SixPillarsView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />

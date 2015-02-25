@@ -7,15 +7,18 @@ namespace SixPillars.Web
 {
     public class Pillar
     {
-        public string Title { get; private set; }
-        public string Description { get; private set; }
-        public string Scripture { get; private set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Scripture { get; set; }
 
-        public Pillar(dynamic JSONObject)
+        public Pillar(dynamic JSONObject = null)
         {
-            Title = JSONObject.title;
-            Description = JSONObject.description;
-            Scripture = JSONObject.scripture;
+            if (JSONObject != null)
+            {
+                Title = JSONObject.title;
+                Description = JSONObject.description;
+                Scripture = JSONObject.scripture;
+            }
         }
     }
 }
